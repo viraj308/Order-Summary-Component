@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --veryPale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    background-color: var(--pale-blue);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Display'
+}
+
+.container {
+    background-color: white;
+    width: 330px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.main_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.main {
+    padding: 1.5em;
+}
+h1 {
+    font-weight: 900;
+    font-size: 1.375rem;
+    color: var(--dark-blue);
+    margin-top: 0.24em;
+}
+.text {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--desaturated-blue);
+    margin-top: 1.2em;
+    padding: 0 0.3em;
+    line-height: 1.5em;
+}
+.container2 {
+    background-color: var(--veryPale-blue);
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    font-size: 0.89rem;
+    margin-top: 1.7em;
+}
+.text2 {
+    width: 150px;
+    margin: 0 1.4em;
+}
+.annual {
+    font-weight: 900;
+    line-height: 1.6em;
+    text-align: center;
+}
+.price {
+    color: var(--desaturated-blue);
+}
+.change {
+    font-size: 0.8rem;
+}
+.music-img {
+    width: 60px
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    margin-top: 1.5em;
+}
+.cancel {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 900;
+    width: 50%;
+    text-align: center;
+    margin-top: 1.2em;
+    padding: 0.5em;
+    color: var(--desaturated-blue);
+}
+button {
+    height: 3.5em;
+    border-radius: 10px;
+    font-family: 'Red Hat Display';
+    font-weight: 900;
+    font-size: 0.9rem;
+    background-color: var(--bright-blue);
+    color: white;
+    width: 100%;
+    border: none;
+}
