@@ -31,7 +31,7 @@ body {
 
 .container {
     background-color: white;
-    width: 330px;
+    width: 88%;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 10px 10px 30px 5px hsl(222, 31%, 78%);
@@ -130,9 +130,22 @@ button {
 .change:hover {
     text-decoration: none;
 }
+.sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    margin: -1px !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+  }
+  
 @media (min-width: 376px) {
     .container {
-        width: 88%;
         max-width: 450px;
     }
     html {
@@ -145,5 +158,17 @@ button {
     }
     .main {
         padding: 2rem;
+    }
+}
+@media (max-width: 320px) {
+    .container {
+        min-width: 290px;
+    }
+    .container2 {
+        flex-direction: column;
+    }
+    .text2 {
+        text-align: center;
+        margin: 1em 0;
     }
 }
